@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import logo from "../img/logo.webp";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-slate-800">
-            <img src='/img/logo.webp' width={150}></img>
+            <img src={logo} width={150}></img>
           </div>
 
           <div className="hidden md:flex items-center gap-8">
